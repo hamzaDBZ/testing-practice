@@ -1,0 +1,24 @@
+{
+  "name": "testing-practice",
+  "version": "1.0.0",
+  "description": "This repo is for practicing test driven development",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzaDBZ/testing-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hamzaDBZ/testing-practice/issues"
+  },
+  "homepage": "https://github.com/hamzaDBZ/testing-practice#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
