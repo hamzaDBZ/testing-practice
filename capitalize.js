@@ -1,3 +1,5 @@
-function capitalize() {}
+function capitalize() {
+  return "Hamza";
+}
 
 module.exports = capitalize;
