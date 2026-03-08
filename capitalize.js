@@ -1,7 +1,5 @@
 function capitalize(string) {
-  if (string === "coding") return "Coding";
-  if (string === "odin") return "odin";
-  return "Hamza";
+  return string[0].toUpperCase() + string.slice(1);
 }
 
 module.exports = capitalize;

@@ -7,4 +7,4 @@ test(`capitalize the word "coding"`, () =>
   expect(capitalize("coding")).toBe("Coding"));
 
 test(`capitalize the word "odin"`, () =>
-  expect(capitalize("odin")).toBe("odin"));
+  expect(capitalize("odin")).toBe("Odin"));
