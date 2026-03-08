@@ -8,3 +8,6 @@ test(`capitalize the word "coding"`, () =>
 
 test(`capitalize the word "odin"`, () =>
   expect(capitalize("odin")).toBe("Odin"));
+
+test(`capitalize the word "odin" with spaces`, () =>
+  expect(capitalize("   odin    ")).toBe("Odin"));
