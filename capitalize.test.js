@@ -19,3 +19,5 @@ test(`test number`, () => expect(capitalize(10)).toBe("10"));
 
 test(`string starting with a capital letter`, () =>
   expect(capitalize("Coding")).toBe("Coding"));
+
+test(`uppercase word`, () => expect(capitalize("CODING")).toBe("CODING"));
