@@ -1,5 +1,5 @@
 function capitalize(string) {
-  string = string.trim();
+  string = String(string).trim();
   return string[0].toUpperCase() + string.slice(1);
 }
 
