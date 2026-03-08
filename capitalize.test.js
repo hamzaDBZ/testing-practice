@@ -11,3 +11,6 @@ test(`capitalize the word "odin"`, () =>
 
 test(`capitalize the word "odin" with spaces`, () =>
   expect(capitalize("   odin    ")).toBe("Odin"));
+
+test(`string starting with a number`, () =>
+  expect(capitalize("0coding")).toBe("0coding"));
