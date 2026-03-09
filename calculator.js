@@ -4,6 +4,8 @@ function calculator() {
     typeof a === "number" && typeof b === "number" ? a + b : message;
   const subtract = (a, b) =>
     typeof a === "number" && typeof b === "number" ? a - b : message;
-  return { add, subtract };
+  const multiply = (a, b) =>
+    typeof a === "number" && typeof b === "number" ? a * b : message;
+  return { add, subtract, multiply };
 }
 module.exports = calculator();
