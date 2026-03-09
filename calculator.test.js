@@ -35,3 +35,15 @@ test("multiply 10 * undefined", () =>
   ));
 test("multiply 10 * Hello", () =>
   expect(calculator.multiply(10, "Hello")).toBe("Input must be valid number"));
+
+test("divide 10 / 5", () => expect(calculator.divide(10, 5)).toBe(2));
+test("divide 100 / 50", () => expect(calculator.divide(100, 50)).toBe(2));
+test("divide -33 / 66", () => expect(calculator.divide(-33, 66)).toBe(-0.5));
+test("divide 10 / true", () =>
+  expect(calculator.divide(10, true)).toBe("Input must be valid number"));
+test("divide 10 / undefined", () =>
+  expect(calculator.divide(10, undefined)).toBe("Input must be valid number"));
+test("divide 10 / Hello", () =>
+  expect(calculator.divide(10, "Hello")).toBe("Input must be valid number"));
+test("divide -33 / 0", () =>
+  expect(calculator.divide(-33, 0)).toBe("Cannot divide by Zero"));
