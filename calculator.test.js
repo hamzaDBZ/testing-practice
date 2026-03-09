@@ -21,3 +21,17 @@ test("subtract 10 - undefined", () =>
   ));
 test("subtract 10 - Hello", () =>
   expect(calculator.subtract(10, "Hello")).toBe("Input must be valid number"));
+
+test("multiply 10 * 5", () => expect(calculator.multiply(10, 5)).toBe(50));
+test("multiply 100 * 50", () =>
+  expect(calculator.multiply(100, 50)).toBe(5000));
+test("multiply -33 * 66", () =>
+  expect(calculator.multiply(-33, 66)).toBe(-2178));
+test("multiply 10 * true", () =>
+  expect(calculator.multiply(10, true)).toBe("Input must be valid number"));
+test("multiply 10 * undefined", () =>
+  expect(calculator.multiply(10, undefined)).toBe(
+    "Input must be valid number",
+  ));
+test("multiply 10 * Hello", () =>
+  expect(calculator.multiply(10, "Hello")).toBe("Input must be valid number"));
