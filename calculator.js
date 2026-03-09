@@ -7,7 +7,11 @@ function calculator() {
   const multiply = (a, b) =>
     typeof a === "number" && typeof b === "number" ? a * b : message;
   const divide = (a, b) =>
-    typeof a === "number" && typeof b === "number" ? a / b : message;
+    typeof a === "number" && typeof b === "number"
+      ? b === 0
+        ? "Cannot divide by Zero"
+        : a / b
+      : message;
   return { add, subtract, multiply, divide };
 }
 module.exports = calculator();
