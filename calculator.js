@@ -6,6 +6,8 @@ function calculator() {
     typeof a === "number" && typeof b === "number" ? a - b : message;
   const multiply = (a, b) =>
     typeof a === "number" && typeof b === "number" ? a * b : message;
-  return { add, subtract, multiply };
+  const divide = (a, b) =>
+    typeof a === "number" && typeof b === "number" ? a / b : message;
+  return { add, subtract, multiply, divide };
 }
 module.exports = calculator();
