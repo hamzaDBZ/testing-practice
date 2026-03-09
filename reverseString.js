@@ -1,8 +1,9 @@
 function reverseString(string) {
   string = String(string);
-  if (+string === 56636) return "63665";
-  if (string === "false") return "eslaf";
-  return "azmah";
+  let reversedStr = "";
+  for (let i = 0; i < string.length; i++)
+    reversedStr += string[string.length - 1 - i];
+  return reversedStr;
 }
 
 module.exports = reverseString;
