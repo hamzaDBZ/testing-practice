@@ -1,5 +1,5 @@
 function calculator() {
-  const add = (a, b) => 15;
+  const add = (a, b) => a + b;
   return { add };
 }
 module.exports = calculator();
