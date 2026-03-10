@@ -8,3 +8,9 @@ test("test Hello World! with 3 shift factor", () =>
 
 test("test HeLLo with 3 shift factor", () =>
   expect(caesarCipher("HeLLo", 3)).toBe("KhOOr"));
+
+test("test non-alphabetical characters with 3 shift factor", () =>
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!"));
+
+test("test non-alphabetical characters with 3 shift factor", () =>
+  expect(caesarCipher("   Hello, World!  ", 3)).toBe("   Khoor, Zruog!  "));
