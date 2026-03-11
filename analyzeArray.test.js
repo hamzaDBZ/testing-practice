@@ -7,3 +7,11 @@ test("array of numbers", () =>
     max: 8,
     length: 6,
   }));
+
+test("another array of numbers", () =>
+  expect(analyzeArray([10, 7, 3, 18, 12, 6, 4, -5])).toEqual({
+    average: 6.875,
+    min: -5,
+    max: 18,
+    length: 8,
+  }));
