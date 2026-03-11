@@ -1,4 +1,8 @@
 function analyzeArray(array) {
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] !== "number") return "Only array of numbers allowed";
+  }
+
   const length = array.length;
   const min = Math.min(...array);
   const max = Math.max(...array);
