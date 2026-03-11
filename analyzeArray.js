@@ -1,16 +1,14 @@
 function analyzeArray(array) {
-  if (array.length === 8)
-    return {
-      average: 6.875,
-      min: -5,
-      max: 18,
-      length: 8,
-    };
+  const length = array.length;
+  const min = Math.min(...array);
+  const max = Math.max(...array);
+  const average = array.reduce((acc, curr) => acc + curr, 0) / length;
+
   return {
-    average: 4,
-    min: 1,
-    max: 8,
-    length: 6,
+    average,
+    min,
+    max,
+    length,
   };
 }
 
