@@ -15,3 +15,8 @@ test("another array of numbers", () =>
     max: 18,
     length: 8,
   }));
+
+test("mixed array", () =>
+  expect(analyzeArray([10, true, 3, "Hello", 12, 6, 4, -5])).toEqual(
+    "Only array of numbers allowed",
+  ));
