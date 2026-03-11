@@ -16,7 +16,20 @@ test("another array of numbers", () =>
     length: 8,
   }));
 
+test("more array of numbers", () =>
+  expect(analyzeArray([1, 2, 3, 4, 5, 6, 7, 8])).toEqual({
+    average: 4.5,
+    min: 1,
+    max: 8,
+    length: 8,
+  }));
+
 test("mixed array", () =>
   expect(analyzeArray([10, true, 3, "Hello", 12, 6, 4, -5])).toEqual(
+    "Only array of numbers allowed",
+  ));
+
+test("more mixed array", () =>
+  expect(analyzeArray([10, 3, 7, "12", { HELLO: 5 }, 4, -5])).toEqual(
     "Only array of numbers allowed",
   ));
